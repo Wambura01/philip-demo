@@ -1,0 +1,141 @@
+.traveller-details {
+    background: black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    .title {
+        margin-top: 0;
+        color: white;
+        font-family: 'Roboto Mono', monospace;
+        padding-top: 3rem;
+        font-size: 2.5rem;
+    }
+
+    .form-container {
+        width: 60%;
+        background-color: white;
+        border-radius: 10px;
+        margin-bottom: 9.4rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 2rem 0;
+
+        .traveller-form {
+            width: 90%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+
+            .section {
+                width: 95%;
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+                justify-content: center;
+
+                .section-title {
+                    font-family: 'Roboto Mono', monospace;
+                    font-weight: bold;
+                    color: #333333;
+                }
+
+                .f-row {
+                    width: 100%;
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+                    margin-bottom: 1.7rem;
+
+                    .text{
+                        width: 45%;
+
+                        input {
+                            width: 100%;
+                            padding: .6rem .3rem;
+                            font-family: 'Roboto Mono', monospace;
+                            color: black;
+                            border: 2px solid #989898;
+                            border-radius: 10px;
+                        }
+                    }
+                }
+
+                .s-row {
+                    width: 100%;
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+                    margin-bottom: 1.7rem; 
+
+                    .text {
+                        width: 30%;
+
+                        input {
+                            width: 100%;
+                            padding: .6rem .3rem;
+                            font-family: 'Roboto Mono', monospace;
+                            color: black;
+                            border: 2px solid #989898;
+                            border-radius: 10px;
+                        }
+                    }
+                }
+
+                .t-row {
+                    width: 100%;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    margin-bottom: 1.7rem;
+
+                    .text {
+                        width: 100%;
+
+                        input {
+                            width: 100%;
+                            padding: .6rem .3rem;
+                            font-family: 'Roboto Mono', monospace;
+                            color: black;
+                            border: 2px solid #989898;
+                            border-radius: 10px;
+                        }
+                    }
+                }
+            }
+
+            .btn-container {
+                width: 15%;
+
+                .btn {
+                    width: 100%;
+                    font-family: 'Roboto Mono', monospace;
+                    font-size: .9rem;
+                    border: none;
+                    border-radius: 10px;
+                    background-color: black;
+                    color: white;
+                    padding: .5rem 0;
+                    cursor: pointer;
+                    transition: all .3s linear;
+                }
+
+                .btn:hover{
+                    background-color: white;
+                    color: black;
+                    border: 2px solid black;
+                }
+            }
+        }
+    }
+
+    .display {
+        color: white;
+        width: 50%;
+        border: 1px solid red;
+    }
+}

@@ -1,0 +1,49 @@
+{
+  "traveller": [
+    {
+      "destination": "Namibia",
+      "firstName": "Philip",
+      "lastName": "Demo",
+      "phoneNumber": "852741963",
+      "gender": "Male",
+      "dob": "01/01/1948",
+      "passport": "369852741",
+      "departure": "Egypt",
+      "ticket": "259637",
+      "seat": "C4",
+      "flight": "AQ852",
+      "departurePort": "Test",
+      "id": 2
+    },
+    {
+      "firstName": "Prince",
+      "lastName": "Mapingu",
+      "phoneNumber": "78521632",
+      "gender": "Male",
+      "dob": "04/07/1920",
+      "passport": "36412574",
+      "departure": "Libya",
+      "destination": "Dubai",
+      "ticket": "852123",
+      "seat": "B7",
+      "flight": "LI123",
+      "departurePort": "Lib",
+      "id": 3
+    },
+    {
+      "firstName": "Kevin",
+      "lastName": "Minji",
+      "phoneNumber": "86532741",
+      "gender": "Male",
+      "dob": "01/01/2006",
+      "passport": "7417896321",
+      "departure": "Uganda",
+      "destination": "Somalia",
+      "ticket": "654412",
+      "seat": "E9",
+      "flight": "KQ789",
+      "departurePort": "JKIA",
+      "id": 4
+    }
+  ]
+}
