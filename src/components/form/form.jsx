@@ -10,12 +10,12 @@ function Form() {
     phoneNumber: "",
     gender: "",
     dob: "",
-    passport: "",
-    departure: "",
-    destination: "",
-    ticket: "",
-    seat: "",
-    flight: "",
+    passportNumber: "",
+    departureCountry: "",
+    destinationCountry: "",
+    ticketNumber: "",
+    seatNumber: "",
+    flightNumber: "",
     departurePort: "",
   };
 
@@ -37,7 +37,7 @@ function Form() {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      await fetch("https://5c6b-105-27-239-221.ngrok.io", {
+      await fetch("http://localhost:9091/api/v1/bookings", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(values),
@@ -109,9 +109,9 @@ function Form() {
               <div className="text">
                 <input
                   type="text"
-                  name="passport"
+                  name="passportNumber"
                   placeholder="Passport Number"
-                  value={values.passport}
+                  value={values.passportNumber}
                   onChange={handleInputChange}
                 />
               </div>
@@ -123,18 +123,18 @@ function Form() {
               <div className="text">
                 <input
                   type="text"
-                  name="departure"
+                  name="departureCountry"
                   placeholder="Departure Country"
-                  value={values.departure}
+                  value={values.departureCountry}
                   onChange={handleInputChange}
                 />
               </div>
               <div className="text">
                 <input
                   type="text"
-                  name="destination"
+                  name="destinationCountry"
                   placeholder="Destination Country"
-                  value={values.destination}
+                  value={values.destinationCountry}
                   onChange={handleInputChange}
                 />
               </div>
@@ -143,27 +143,27 @@ function Form() {
               <div className="text">
                 <input
                   type="text"
-                  name="ticket"
+                  name="ticketNumber"
                   placeholder="Ticket Number"
-                  value={values.ticket}
+                  value={values.ticketNumber}
                   onChange={handleInputChange}
                 />
               </div>
               <div className="text">
                 <input
                   type="text"
-                  name="seat"
+                  name="seatNumber"
                   placeholder="Seat Number"
-                  value={values.seat}
+                  value={values.seatNumber}
                   onChange={handleInputChange}
                 />
               </div>
               <div className="text">
                 <input
                   type="text"
-                  name="flight"
+                  name="flightNumber"
                   placeholder="Flight Number"
-                  value={values.flight}
+                  value={values.flightNumber}
                   onChange={handleInputChange}
                 />
               </div>
