@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { Link } from "react-router-dom";
 
 import "./form.scss";
 
@@ -37,7 +38,7 @@ function Form() {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      await fetch("http://localhost:9091/api/v1/bookings", {
+      await fetch("https://8cf7-41-72-206-58.ngrok.io/api/v1/bookings", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(values),
@@ -51,6 +52,9 @@ function Form() {
 
   return (
     <div className="traveller-details">
+      <Link className="link" to="/table">
+        <button className="btn">View Traveller Table</button>
+      </Link>
       <h1 className="title">Traveller Details</h1>
       <div className="form-container">
         <form onSubmit={handleSubmit} className="traveller-form">

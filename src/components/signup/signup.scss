@@ -1,0 +1,92 @@
+.signup-container {
+    background-color: black;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    .title {
+        color: white;
+        font-family: 'Roboto Mono', monospace;
+        font-size: 2.5rem;
+    }
+
+    .signup-form {
+        margin-top: 2rem;
+        width: 30%;
+        background-color: white;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        border: 0;
+        border-radius: 10px;
+        padding: 3rem 0 4rem 0;
+
+        .heading {
+            width: 80%;
+            text-align: left;
+            font-family: 'Roboto Mono', monospace;
+            font-size: .8rem;
+        }
+
+        .inputs {
+            width: 80%;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+
+            .label {
+                font-family: 'Roboto Mono', monospace;
+                margin-bottom: 1rem;
+            }
+
+            .input {
+                width: 90%;
+                margin-bottom: 1rem;
+                padding: .6rem .3rem;
+                color: black;
+                border: 2px solid #989898;
+                border-radius: 10px;
+            }
+        }
+
+        .signup-btn {
+            width: 30%;
+            margin-top: 1.5rem;
+            font-family: 'Roboto Mono', monospace;
+            font-size: .9rem;
+            border: none;
+            border-radius: 10px;
+            background-color: black;
+            color: white;
+            padding: .5rem 0;
+            cursor: pointer;
+            transition: all .3s linear;
+        }
+
+        .signup-btn:hover {
+            background-color: white;
+            color: black;
+            border: 2px solid black;
+        }
+    }
+
+    .link-container {
+        margin-bottom: 2.1rem;
+
+        .link{
+            color: white;
+            font-family: 'Roboto Mono', monospace;
+            font-weight: 300;
+            font-size: 1rem;
+
+            .span {
+                cursor: pointer;
+                color: white;
+                font-weight: 500;
+                text-decoration: none;
+            }
+        }
+    }
+}
